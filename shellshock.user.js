@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Wallhack, that shows eggs behind walls and aimbot
-// @author       Zertalious (Zert)
+// @author       focho mocho
 // @match        *://shellshock.io/*
 // @match        *://algebra.best/*
 // @match        *://algebra.vip/*
@@ -328,7 +328,7 @@ temp.innerHTML = `<style>
 </style>
 
 <div class="msg" style="display: none;"></div>
-<div class="helpbox" id="dialogcontrol"><div class="close" onclick="this.parentNode.style.display='none';"></div>
+<div class="info" id="dialogcontrol"><div class="close" onclick="this.parentNode.style.display='none';"></div>
 <img src="https://i.imgur.com/P77vcpI.png" alt="BY FOCHOMOCHO">
     <div class="clearfix">
     <p class="left">Status: <span style="color: lightgreen;">Working</span></p>
@@ -371,7 +371,7 @@ temp.innerHTML = `<style>
 </div>
 <style>
 
-.helpbox {
+.info {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -385,7 +385,7 @@ temp.innerHTML = `<style>
     border-radius: 10px;
 }
 
-.helpbox * {
+.info * {
     color: #fff;
 }
 
